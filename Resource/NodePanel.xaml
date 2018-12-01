@@ -1,0 +1,114 @@
+﻿<Window
+    x:Class="Mesh_Network_Manager.Resource.NodePanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:local="clr-namespace:Mesh_Network_Manager.Resource"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="370"
+    Height="210"
+    mc:Ignorable="d"
+    AllowsTransparency="True"
+    Background="Transparent"
+    Name="nodePanel"
+    Title="Node Panel"
+    WindowStyle="None">
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="MouseLeftButtonDown">
+            <i:InvokeCommandAction Command="{Binding MoveCommand}" CommandParameter="{Binding ElementName=nodePanel}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
+    <Border Background="White" CornerRadius="15">
+        <StackPanel Margin="5">
+            <DockPanel Margin="0 5 0 0">
+                <TextBlock
+                    HorizontalAlignment="Left"
+                    FontSize="20"
+                    Text="Node ID: " />
+                <TextBlock
+                    HorizontalAlignment="Right"
+                    DockPanel.Dock="Right"
+                    FontSize="20"
+                    Text="{Binding nodeID}" />
+            </DockPanel>
+            <DockPanel Margin="0 10" LastChildFill="True">
+                <TextBlock
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center"
+                    FontSize="20"
+                    Text="LED state " />
+                <Ellipse
+                    Width="30"
+                    Height="30"
+                    HorizontalAlignment="Center"
+                    DockPanel.Dock="Right"
+                    Fill="{Binding LedColor}" />
+            </DockPanel>
+            <CheckBox
+                IsChecked="{Binding isLEDChecked, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                Name="checkboxToggle"
+                Margin="0 0 0 5"
+                VerticalAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="20"
+                Padding="4,2,0,0"
+                Style="{StaticResource MaterialDesignCheckBox}">
+                <!--<i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Checked">
+                        <i:InvokeCommandAction Command="{Binding CheckChangedCommand}" CommandParameter="{Binding ElementName=checkboxBaoTri}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>-->
+                Toggle LED
+            </CheckBox>
+            <CheckBox
+                IsChecked="{Binding isStopChecked,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                Margin="0 0 0 5"
+                VerticalAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="20"
+                Name="checkboxBaoTri"
+                Padding="4,2,0,0"
+                Style="{StaticResource MaterialDesignCheckBox}">
+                <!--<i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Checked">
+                        <i:InvokeCommandAction Command="{Binding CheckChangedCommand}" CommandParameter="{Binding ElementName=checkboxBaoTri}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>-->
+                Stop this node
+            </CheckBox>
+            <UniformGrid
+                Margin="0 5"
+                Columns="2"
+                Rows="1">
+                <Button
+                    Width="130"
+                    HorizontalAlignment="Center"
+                    Command="{Binding AcceptCommand}"
+                    CommandParameter="{Binding ElementName=nodePanel}"
+                    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                    ToolTip="Resource name: MaterialDesignRaisedLightDarkButton">
+                    OK
+                </Button>
+                <Button
+                    Width="130"
+                    HorizontalAlignment="Center"
+                    Background="#FFFFA200"
+                    BorderBrush="#FFFFA200"
+                    Command="{Binding CancelCommand}"
+                    CommandParameter="{Binding ElementName=nodePanel}"
+                    Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                    ToolTip="Resource name: MaterialDesignRaisedLightDarkButton">
+                    Cancel
+                </Button>
+            </UniformGrid>
+        </StackPanel>
+    </Border>
+
+</Window>
+
+            

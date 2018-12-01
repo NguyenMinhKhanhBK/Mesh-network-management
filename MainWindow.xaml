@@ -1,0 +1,116 @@
+﻿<Window
+    x:Class="Mesh_Network_Manager.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+    xmlns:local="clr-namespace:Mesh_Network_Manager"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Width="800"
+    Height="600"
+    mc:Ignorable="d"
+    Title="MESH Network Manager">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!--MQTT broker -->
+        <UniformGrid
+            Grid.Row="0"
+            Margin="5 10 5 5"
+            Rows="2">
+            <StackPanel Orientation="Horizontal">
+                <TextBox
+                    IsEnabled="{Binding isnotConnected}"
+                    Text="{Binding mqttBroker,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                    Width ="600"
+                    FontSize="18"
+                    materialDesign:HintAssist.Hint="MQTT Broker Address"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                <Button
+                    IsEnabled="{Binding isnotConnected,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                    Name="btnConnect"
+                    Command="{Binding connectCommand}"
+                    CommandParameter="{Binding ElementName=btnConnect}"
+                    Width="150"
+                    Margin="15 0 0 0"
+                    VerticalAlignment="Bottom"
+                    FontSize="18"
+                    materialDesign:RippleAssist.Feedback="#DD000000"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    ToolTip="Resource name: MaterialDesignRaisedAccentButton">
+                    Connect
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBox
+                    IsEnabled="{Binding isnotConnected}"
+                    Text="{Binding mqttPort,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                    Width="600"
+                    FontSize="18"
+                    materialDesign:HintAssist.Hint="MQTT Port"
+                    Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                <Button
+                    Command="{Binding disconnectCommand}"
+                    IsEnabled="{Binding isConnected}"
+                    Width="150"
+                    Margin="15 0 0 0"
+                    VerticalAlignment="Bottom"
+                    Background="#FFFF8000"
+                    BorderBrush="#FFFF8000"
+                    FontSize="18"
+                    Foreground="#DDFFFFFF"
+                    materialDesign:RippleAssist.Feedback="#DD000000"
+                    Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                    ToolTip="Resource name: MaterialDesignRaisedAccentButton">
+                    Disconnect
+                </Button>
+            </StackPanel>
+        </UniformGrid>
+        <!-- Network topology -->
+        <Border
+            IsEnabled="{Binding isConnected}"
+            Grid.Row="1"
+            Margin="10 20 10 20"
+            Background="#FF333942"
+            CornerRadius="10">
+            <Border.Effect>
+                <DropShadowEffect
+                    Color="#FF919191"
+                    BlurRadius="5"
+                    RenderingBias="Quality" />
+            </Border.Effect>
+            <DockPanel LastChildFill="True">
+                <StackPanel
+                    Height="60"
+                    VerticalAlignment="Top"
+                    DockPanel.Dock="Top"
+                    Orientation="Horizontal">
+                    <materialDesign:PackIcon
+                        Width="30"
+                        Height="30"
+                        Margin="20 0 5 0"
+                        VerticalAlignment="Center"
+                        Foreground="#FFE6E6E6"
+                        Kind="Earth" />
+                    <TextBlock
+                        VerticalAlignment="Center"
+                        FontSize="30"
+                        Foreground="#FFE6E6E6"
+                        Text="Mesh Network Topology" />
+                </StackPanel>
+                <WrapPanel
+                    Button.Click ="ButtonClickHandler" 
+                    Name="wrapPanelTopology"
+                    Margin="10"
+                    DockPanel.Dock="Bottom"
+                    ScrollViewer.VerticalScrollBarVisibility="Auto" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </DockPanel>
+        </Border>
+    </Grid>
+
+</Window>

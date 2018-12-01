@@ -1,0 +1,38 @@
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Mesh Network Manager.csprojAssemblyReference.cache
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\MainWindow.g.cs
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\App.g.cs
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Mesh Network Manager_MarkupCompile.cache
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Mesh Network Manager_MarkupCompile.lref
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Mesh Network Manager.exe.config
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Mesh Network Manager.exe
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Mesh Network Manager.pdb
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\MaterialDesignColors.dll
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Resource\NodePanel.g.cs
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\App.baml
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\MainWindow.baml
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Resource\NodePanel.baml
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Mesh Network Manager.g.resources
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Mesh_Network_Manager.Properties.Resources.resources
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Mesh Network Manager.csproj.GenerateResource.cache
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Mesh Network Manager.csproj.CoreCompileInputs.cache
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Mesh Network Manager.csproj.CopyComplete
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Mesh Network Manager.exe
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\obj\Debug\Mesh Network Manager.pdb
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Newtonsoft.Json.dll
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Newtonsoft.Json.xml
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\M2Mqtt.Net.dll
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\M2Mqtt.Net.pdb
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\CommonServiceLocator.dll
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Prism.dll
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Prism.Wpf.dll
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Prism.pdb
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Prism.xml
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Prism.Wpf.pdb
+C:\Users\UX410\Documents\Visual Studio 2017\WPF\Mesh Network Manager\Mesh Network Manager\bin\Debug\Prism.Wpf.xml
